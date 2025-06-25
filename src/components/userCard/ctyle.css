@@ -1,0 +1,15 @@
+.user-card
+{
+    background-color: rgb(43, 30, 102);
+    color: rgb(241, 255, 240);
+    text-align: left;
+    padding: 1px 15px;
+    border-radius: 6px;
+    margin: 2px;
+    display: inline-block;
+
+}
+.user-card h3
+{
+    text-align: center;
+}
