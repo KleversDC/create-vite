@@ -2,19 +2,31 @@
 import './App.css'
 
 import Page1 from './components/Page1'
+import Timer from './components/times'
 import Article from './components/userCard'
+import ButtonPl from './components/userCard'
 import UserCard from './components/userCard'
+import UserList from './components/userList'
 
 function App() {
-
+  const USERS = [
+    { name: "Yurii", address: "Rivne, Ukraine", position: "Teacher", color: "Red" },
+    { name: "Vitalik", address: "Kostopil, Ukraine", position: "Student", color: "Green" },
+    { name: "Jenya", address: "Dzhmelivka, Ukraine", position: "Pupil", color: "Orange" },
+    { name: "Mihailo", address: "Verhivsk, Ukraine", position: "Student" }
+  ]
   return (
       <>
-      <Article title="Вплив соціальних мереж на психічне здоров’я підлітків" Avtor="Іваненко Марія" posilannya="https://www.unicef.org/ukraine/media/18011/file/Social_Media_Impact_Report.pdf"/>
+      {/* <Article title="Вплив соціальних мереж на психічне здоров’я підлітків" Avtor="Іваненко Марія" posilannya="https://www.unicef.org/ukraine/media/18011/file/Social_Media_Impact_Report.pdf"/> */}
       {/* <Page1/> */}
       {/* <UserCard name="fff" adress="total" position="Teacher" color="Red"/>
 
       <UserCard color="yellow"/>
       <UserCard/> */}
+      <ButtonPl start="0"/>
+      <UserList users={USERS}/>
+      <Timer start="10"/>
+      <Timer start="20"/>
       {/* <h3>
         Біографія Шекспіра
       </h3>
